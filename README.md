@@ -1,20 +1,10 @@
-# Blank Website Resource
+# Pig Dice Y2K
 
 ## Introduction
-This archive contains the following files:
-/css
-/img
-/js
-index.html
-This is an archive as a blank slate to help with website creation.
 
 ## Download
-Visit https://github.com/johnnymayer/blanksite in your browser.
-OR
-Clone via https://github.com/johnnymayer/blanksite.git
 
 ## Installation
-Unzip the archive, retitle dir "BLANKWEBSITE" to your preferred website name.
 
 ## Author
 Johnny Mayer

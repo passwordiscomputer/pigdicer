@@ -36,3 +36,5 @@ function play() {
 }
 
 //FRONT END
+
+MY LOGIC IS FIRE

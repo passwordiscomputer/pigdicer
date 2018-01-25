@@ -1,5 +1,17 @@
 body {
   text-align: center;
-  background:  url(../img/raylewis.gif) no-repeat center center fixed;
+  background:  url(../img/trey.gif) no-repeat center center fixed;
   background-size: cover;
+  color: white;
+  font-size: 92px;
+  font-family: monospace;
+}
+
+button {
+  color: white;
+  background-color: purple;
+}
+#hold2, #roll2{
+  display: none;
+  background-color: blue;
 }

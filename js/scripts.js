@@ -1,4 +1,4 @@
-//BACKY
+//BACK END
 function Player(name) {
   this.name = name;
   this.totalScore = 0;
@@ -13,7 +13,7 @@ function roll() {
     return num;
   }
 }
-
+//FRONT END
 $(document).ready(function() {
   $("form#playerNameInput").submit(function(event) {
     var player1 = new Player($("#player1").val());

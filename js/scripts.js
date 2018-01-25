@@ -1,4 +1,14 @@
-//BACK END
+//BACKY
+function Player(name) {
+  this.name = name;
+  this.points = 0;
+}
+
+function Game() {
+  this.playerArray = [];
+
+}
+
 function roll() {
   var num = Math.floor(Math.random() * 6) + 1;
   if ( num === 1) {
@@ -8,33 +18,49 @@ function roll() {
   }
 }
 
-function turn() {
+Player.prototype.turn = function() {
   var choice = true;
   var points = 0;
   while(choice === true) {
-    choice = confirm("Would you like to roll again?"); /*REMOVE CONFIRM BOX WHEN INTEGRATING PLAYER FUNCTIONS*/
     var num = roll();
+    $("#currentRoll").text(num);
     if (num === 0) {
     points = 0;
     return points;
   } if (choice === false) {
       points = (points + num);
+      this.points = this.points + points;
       return points;
     } else if (choice === true) {
-      points = (points + num);
+      this.points = (points + num);
     }
   }
 }
 
-function play() {
-  var pointTotal = 0;
-  if points = 100; {
-    /*DISPLAY WIN MESSAGE*/
+function playerStart() {
+  var num = Math.floor(Math.random() * 2) + 1;
+  if (num === 1) {
+    return alert("Player X starts.");
   } else {
-    /*DISPLAY WIN CONDITION NOT MET*/
+    return alert("Player Y starts.");
   }
 }
 
-//FRONT END
+// function play() {
+//   while (100 > player.points) {
+//   }
+// }
+//FRONTY
 
-MY LOGIC IS FIRE
+$(document).ready(function() {
+  $("form#playerNameInput").submit(function(event) {
+    var game1 = new Game();
+    game1.playerArray.push(new Player("Chase"));
+    game1.playerArray.push(new Player("Johnny"));
+    game1.playerArray[1].turn();
+    event.preventDefault();
+  });
+});
+
+$("#roll").click(function() {
+});
